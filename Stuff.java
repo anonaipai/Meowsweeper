@@ -7,6 +7,5 @@ public class Stuff {
 	public static int currentTile;
 	public static int[][] hiddenMap;
 	public static int[][] currentMap;
-	public static TileMap TMObject = new TileMap();
 
 }
