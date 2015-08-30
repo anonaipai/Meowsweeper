@@ -10,32 +10,32 @@ public class ButtonHandler extends KeyAdapter {
 	}
 
 	public void keyReleased(KeyEvent key) {
-		actionPerformed(key);
+		actionPerformed(key, false);
 	}
 
 	public void keyPressed(KeyEvent key) {
-		actionPerformed(key);
+		actionPerformed(key, true);
 	}
 
-	public void actionPerformed(KeyEvent key) {
+	public void actionPerformed(KeyEvent key, boolean Value) {
 		switch (key.getKeyCode()) {
 		case KeyEvent.VK_UP:
-			Stuff.charater.setUp(false);
+			Stuff.charater.setUp(Value);
 			break;
 		case KeyEvent.VK_LEFT:
-			Stuff.charater.setLeft(false);
+			Stuff.charater.setLeft(Value);
 			break;
 		case KeyEvent.VK_DOWN:
-			Stuff.charater.setDown(false);
+			Stuff.charater.setDown(Value);
 			break;
 		case KeyEvent.VK_RIGHT:
-			Stuff.charater.setRight(false);
+			Stuff.charater.setRight(Value);
 			break;
 		case KeyEvent.VK_S:
-			Stuff.charater.setClick(false);
+			Stuff.charater.setClick(Value);
 			break;
 		case KeyEvent.VK_D:
-			Stuff.charater.setFlag(false);
+			Stuff.charater.setFlag(Value);
 			break;
 
 		}

@@ -1,4 +1,3 @@
-import java.awt.image.BufferedImage;
 
 public class Charater {
 	private int xCoord, yCoord;
@@ -56,8 +55,10 @@ public class Charater {
 		if (up) {
 			yCoord -= Stuff.tileSize;
 		}
-		if(click){}
-		if(flag){}
+		if (click) {
+		}
+		if (flag) {
+		}
 		if (xCoord < 0)
 			xCoord = 600;
 		if (xCoord > 600)
